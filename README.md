@@ -22,9 +22,9 @@ RL-DroneSim is a comprehensive framework for training autonomous drone flight co
 
 The system features a high-performance gRPC bridge enabling real-time communication at 120Hz, multi-threaded environment sampling, and sophisticated monitoring infrastructure for deep analysis of the training process.
 
-<div align="center">
+<!-- <div align="center">
   <img src="docs/architecture.png" alt="System Architecture" width="90%"/>
-</div>
+</div> -->
 
 ## Key Features
 
