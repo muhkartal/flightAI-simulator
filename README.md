@@ -314,9 +314,9 @@ Analysis of the training metrics revealed that policy entropy steadily decreased
 
 ### Neural Network Architecture
 
-<div align="center">
+<!-- <div align="center">
   <img src="docs/network_architecture.png" alt="Neural Network Architecture" width="90%"/>
-</div>
+</div> -->
 
 ```
 Input (84x84x3 RGB image)
