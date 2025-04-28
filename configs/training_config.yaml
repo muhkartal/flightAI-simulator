@@ -1,0 +1,31 @@
+environment:
+   server_address: "localhost:50051"
+   observation_shape: [3, 84, 84] # [channels, height, width]
+   action_shape: [4] # [roll, pitch, yaw_rate, throttle]
+   use_images: true
+   image_types: ["rgb"]
+   image_width: 84
+   image_height: 84
+
+training:
+   num_workers: 4
+   steps_per_epoch: 2048
+   epochs: 200
+   batch_size: 64
+   learning_rate: 3.0e-4
+   gamma: 0.99
+   lambda: 0.95
+   clip_param: 0.2
+   value_coef: 0.5
+   entropy_coef: 0.01
+   max_grad_norm: 0.5
+   num_mini_batches: 4
+   num_epochs: 4
+   checkpoint_dir: "./checkpoints"
+   model_dir: "./models"
+   log_dir: "./logs"
+
+evaluation:
+   num_episodes: 10
+   record_video: true
+   video_path: "./videos"
